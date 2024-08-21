@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="starter-code/assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Password generator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      Password Generator
+    </div>
+    <div class="passwordContainer">
+      <div class="generatedPassword" id="generated-password"><span class="generatedPasswordPlaceHolder">P4$5W0rD!</span></div>
+      <div id="copy-password"><span class="coppiedText" id="copied-text">COPIED</span><img src="starter-code/assets/images/icon-copy.svg" class="imgCopy" id="img-copy"></div>
+    </div>
+    <div class="mainContainer">
+      <form id="password-generator-form">
+        <div class="formRow">
+          <label class="chracterLengthLabel">Character Length</label>
+          <div class="characterLength" id="character-length">0</div>
+        </div>
+        <div class="sliderContainer">
+          <input type="range" min="0" max="20" value="0" class="slider" id="password-generator-range">
+        </div>
+        <div class="formRow1">
+          <input type="checkbox" id="input-upper-case" class="checkBox">
+          <label for="input-upper-case" class="input-upper-case">
+            Include Uppercase Letters
+          </label>
+        </div>
+        <div class="formRow1">
+          <input type="checkbox" id="input-lower-case" class="checkBox">
+          <label for="input-lower-case" class="input-lower-case">
+            Include Lowercase Letters
+          </label>
+        </div>
+        <div class="formRow1">
+          <input type="checkbox" id="input-numbers" class="checkBox">
+          <label for="input-numbers" class="input-numbers">
+            Include Numbers
+          </label>
+        </div>
+        <div class="formRow1 formRow2">
+          <input type="checkbox" id="input-symbols" class="checkBox">
+          <label for="input-symbols" class="input-symbols">
+            Include Symbols
+          </label>
+        </div>
+      </form>
+      <div class="strengthContainer">
+        <div class="strength">
+          STRENGHT
+        </div>
+        <div class="strengthLevel">
+          <div class="strengthLevelContainer"><span id="strenght-level"></span>
+            <div class="strengthLevels tooWeak" id="tooWeak"></div>
+            <div class="strengthLevels weak" id="weak"></div>
+            <div class="strengthLevels medium" id="medium"></div>
+            <div class="strengthLevels strong" id="strong"></div>
+          </div>
+        </div>
+      </div>
+      <div class="buttonContainer">
+        <button class="buttonPrimary" id="generate-button">
+          <span class="btnContainer"> <span class="generateText">Generate</span><img src="starter-code/assets/images/icon-arrow-right.svg" class="buttonArrow"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

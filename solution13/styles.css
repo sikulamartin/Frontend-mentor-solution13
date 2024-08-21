@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(20, 19, 27);
+    background: -moz-linear-gradient(180deg, rgba(20, 19, 27, 1) 0%, rgba(8, 7, 11, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(20, 19, 27, 1) 0%, rgba(8, 7, 11, 1) 100%);
+    background: linear-gradient(180deg, rgba(20, 19, 27, 1) 0%, rgba(8, 7, 11, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#14131b", endColorstr="#08070b", GradientType=1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 31px;
+    color: #817D92;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.passwordContainer {
+    background-color: #24232C;
+    margin-bottom: 32px;
+    padding: 19px 32px;
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#copy-password {
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.generatedPassword {
+    color: #E6E5EA;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.mainContainer {
+    background-color: #24232C;
+    padding: 24px 32px;
+}
+
+.formRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.chracterLengthLabel {
+    color: #E6E5EA;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    margin: auto 0;
+}
+
+.characterLength {
+    color: #A4FFAF;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.slider {
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background:#18171F;
+    outline: none;
+    margin-bottom: 32px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 9999px;
+    background: #E6E5EA;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 26px;
+    height: 26px;
+    border-radius: 9999px;
+    background: #24232C;
+    border: 2px solid #A4FFAF;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 28px;
+    height: 28px;
+    background: #E6E5EA;
+    cursor: pointer;
+}
+
+.generatedPasswordPlaceHolder {
+    opacity: 25%;
+}
+
+.checkBox {
+    width: 20px;
+    height: 20px;
+    background-color: #24232C;
+    border: 2px solid #E6E5EA;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.checkBox:hover{
+    border-color: #A4FFAF;
+}
+
+.buttonPrimary:hover{
+    border: 2px solid #A4FFAF;
+    background-color: #24232C;
+    color: #A4FFAF;
+}
+
+
+.checkBox:checked {
+    background-color: #A4FFAF;
+    border-color: #A4FFAF;
+    background-image: url("starter-code/assets/images/icon-check.svg");
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.formRow1{
+    display: flex;
+    gap: 24px;
+    color: #E6E5EA;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.formRow2{
+    margin-bottom: 28px;
+}
+
+.input-upper-case, .input-lower-case, .input-numbers, .input-symbols{
+    cursor: pointer;
+}
+
+.strengthContainer{
+    padding: 20px 32px;
+    background-color: #18171F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.strength{
+    margin: auto 0;
+    color: #817D92;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.strengthLevels{
+    width: 10px;
+    height: 28px;
+    border: 2px solid #E6E5EA;
+}
+
+.tooWeakactive{
+    border-color: #F64A4A;
+    background-color: #F64A4A;
+}
+
+.weakActive{
+    border-color: #FB7C58;
+    background-color: #FB7C58;
+}
+
+.mediumActive{
+    border-color: #F8CD65;
+    background-color: #F8CD65;
+}
+
+.strongActive{
+    border-color: #A4FFAF;
+    background-color: #A4FFAF;
+}
+
+.strengthLevelContainer{
+    display: flex;
+    gap: 8px;
+}
+
+.buttonPrimary{
+    background-color: #A4FFAF;
+    width: 100%;
+    border: 2px solid #A4FFAF;
+    cursor: pointer;
+}
+
+.buttonArrow{
+    margin: auto 0;
+    margin-left: 24px;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    height: 65px;
+}
+
+.generateText{
+    margin: auto 0;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+#strenght-level{
+    margin: auto 0;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    color: #E6E5EA;
+}
+
+.buttonPrimary:hover .buttonArrow {
+    color: #A4FFAF;
+    filter: invert(65%) sepia(17%) saturate(743%) hue-rotate(70deg) brightness(100%) contrast(102%);
+}
+
+
+.coppiedText{
+    color: #A4FFAF;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    margin-right: 16px;
+    display: none;
+}
+
+#copy-password{
+    display: flex;
+}
+
+
+@media (max-width: 579.98px) {
+    .passwordContainer, .mainContainer{
+        max-width: 343px;
+        width: 100%;
+        padding: 16px;
+    }
+    .container{
+        margin: 0 16px;
+    }
+    #strenght-level{
+        font-size: 18px;
+    }
+    .strengthContainer{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 359.98px) {
+    .strengthContainer{
+        padding: 20px 16px;
+    }
+    .container{
+        margin: 0
+    }
+}
+
+@media (max-height: 669.98px) {
+    body{
+        height: auto;
+    }
+}
